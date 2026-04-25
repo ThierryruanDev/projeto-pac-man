@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PAC-MAN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="startScreen">
+        <h1>PAC-MAN</h1>
+        <canvas id="previewCanvas" width="144" height="36"></canvas>
+        <p>USE AS SETAS DO TECLADO PARA MOVER<br>
+            COMA TODAS AS BOLINHAS PARA VENCER<br>
+            EVITE OS FANTASMAS!</p>
+        <p class="blink">PRESSIONE QUALQUER TECLA PARA INICIAR</p>
+    </div>
+
+    <div id="hud">
+        <div>PONTOS: <span id="scoreDisplay">0</span></div>
+        <div>RECORDE: <span id="highDisplay">0</span></div>
+    </div>
+    <canvas id="gameCanvas" width="560" height="620"></canvas>
+    <div id="lives-bar">
+        <span>VIDAS</span>
+        <canvas id="livesCanvas" width="90" height="26"></canvas>
+    </div>
+
+    <div id="overlay">
+        <h1 id="ovTitle"></h1>
+        <p class="score-line" id="ovScore"></p>
+        <p id="ovMsg"></p>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
